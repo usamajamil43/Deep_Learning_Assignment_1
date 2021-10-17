@@ -13,7 +13,7 @@ class KNearestNeighbor(object):
     def train(self, X, y):
         """
         Train the classifier. For k-nearest neighbors this is just
-        memorizing the training data.
+        memorizing the training data
 
         Inputs:
         - X: A numpy array of shape (num_train, D) containing the training data

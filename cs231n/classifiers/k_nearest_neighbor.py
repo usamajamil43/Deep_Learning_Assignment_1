@@ -89,9 +89,9 @@ class KNearestNeighbor(object):
 
         Input / Output: Same as compute_distances_two_loops
         """
-        num_test = X.shape[0]
-        num_train = self.X_train.shape[0]
-        dists = np.zeros((num_test, num_train))
+        num_test = X.shape[0]          #Number of test examples
+        num_train = self.X_train.shape[0]  #Number of Training examples
+        dists = np.zeros((num_test, num_train))   #To save each test example distance against all the training examples
         for i in range(num_test):
             #######################################################################
             # TODO:                                                               #
@@ -101,7 +101,7 @@ class KNearestNeighbor(object):
             #######################################################################
             # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-            dists[i,:] = np.sqrt( np.sum( ( X[i] - self.X_train ) ** 2, axis=1) )
+            dists[i,:] = np.sqrt( np.sum( ( X[i] - self.X_train ) ** 2) )
 
             # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         return dists

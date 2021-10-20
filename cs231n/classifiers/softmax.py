@@ -36,7 +36,7 @@ def softmax_loss_naive(W, X, y, reg):
 
     pass
 
-    # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
+    # ****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)****
 
     return loss, dW
 
